@@ -1,0 +1,18 @@
+:root {
+  --font-primary: "Noto Sans JP", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-script: "Dancing Script", cursive;
+  --color-primary: #d4a5a5;
+  --color-secondary: #f5e6d3;
+  --color-dark: #2c2c2c;
+  --color-light: #f8f8f8;
+  --color-white: #ffffff;
+  --color-gray: #999999;
+  --color-gray-light: #f0f0f0;
+  --color-accent: #ff6b6b;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --transition-normal: 0.3s ease-in-out;
+}

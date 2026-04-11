@@ -1,0 +1,4 @@
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.center { display: flex; justify-content: center; align-items: center; }
+.fg { display: flex; gap: 1rem; flex-wrap: wrap; }
+section { padding: 3rem 1.5rem; }
