@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voila les Enfants</title>
+  <title>Voila les Enfants - 子どもたちへようこそ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,600;1,700&display=swap" rel="stylesheet">
@@ -14,25 +14,177 @@
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/theme.css">
   <style>
-    /* Styles temporaires en attendant extraction */
-    body { font-family: var(--font-primary); }
+    body { font-family: var(--font-primary); background: white; }
+    .hero-title { font-family: var(--font-display); font-size: 3.5rem; color: var(--color-primary); margin: 2rem 0; }
+    .section-title { font-family: var(--font-display); font-size: 2.5rem; color: var(--color-primary); margin: 2rem 0 1rem 0; border-bottom: 3px solid var(--color-secondary); padding-bottom: 1rem; }
+    .card { background: white; border: 2px solid var(--color-secondary); border-radius: 12px; padding: 2rem; margin: 1rem 0; }
+    .highlight { color: var(--color-primary); font-weight: 700; }
   </style>
 </head>
 <body>
-  <nav id="navbar"><!-- Navigation --></nav>
-  <section id="hero"><!-- Contenu hero --></section>
-  <section id="news"><!-- Contenu news --></section>
-  <section id="activities"><!-- Contenu activities --></section>
-  <section id="services"><!-- Contenu services --></section>
-  <section id="hiroba"><!-- Contenu hiroba --></section>
-  <section id="pricing"><!-- Contenu pricing --></section>
-  <section id="about"><!-- Contenu about --></section>
-  <section id="founders"><!-- Contenu founders --></section>
-  <section id="gallery"><!-- Contenu gallery --></section>
-  <section id="media"><!-- Contenu media --></section>
-  <section id="contact"><!-- Contenu contact --></section>
-  <footer><!-- Footer --></footer>
-  <nav class="foot-nav"><!-- Footer nav --></nav>
+  <!-- NAVIGATION -->
+  <nav id="navbar" style="background: white; border-bottom: 2px solid var(--color-secondary); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
+      <h2 style="color: var(--color-primary); font-family: var(--font-script); font-size: 1.8rem;">✨ Voila les Enfants</h2>
+      <div style="display: flex; gap: 2rem;">
+        <a href="#hero" style="color: var(--color-primary); font-weight: 500;">ホーム</a>
+        <a href="#about" style="color: var(--color-primary); font-weight: 500;">について</a>
+        <a href="#contact" style="color: var(--color-primary); font-weight: 500;">連絡先</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" style="background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-light) 100%); padding: 6rem 2rem; text-align: center;">
+    <div class="container">
+      <h1 class="hero-title">🎉 子どもたちへようこそ</h1>
+      <p style="font-size: 1.3rem; color: var(--color-gray); margin: 1rem 0;">
+        <span class="highlight">Voila les Enfants</span> - 楽しい学習プラットフォーム
+      </p>
+      <p style="font-size: 1rem; color: var(--color-gray); margin-top: 2rem;">
+        🚀 モダンなアーキテクチャで構築 | ✨ 高速で安全 | 🎨 美しいデザイン
+      </p>
+      <button class="btn-primary" style="margin-top: 2rem; padding: 1.2rem 2.5rem; font-size: 1rem; cursor: pointer;">始める</button>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section id="news" style="padding: 4rem 2rem; background: white;">
+    <div class="container">
+      <h2 class="section-title">📰 最新ニュース</h2>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">✨ 新しいプラットフォームがローンチ</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">
+          最新のテクノロジーを使用した、子どもたちのための学習プラットフォームが完成しました。
+          安全で楽しい学習環境を提供します。
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">🎨 デザイン刷新</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">
+          ユーザーエクスペリエンスを向上させるために、インターフェースを完全に刷新しました。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES SECTION -->
+  <section id="activities" style="padding: 4rem 2rem; background: var(--color-light);">
+    <div class="container">
+      <h2 class="section-title">🎨 アクティビティ</h2>
+      <p style="color: var(--color-gray); font-size: 1.1rem; margin-bottom: 2rem;">
+        様々な楽しい活動が利用可能です：
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div class="card">
+          <h3>🎭 クリエイティブワークショップ</h3>
+          <p style="color: var(--color-gray);">子どもたちの創造性を引き出す活動</p>
+        </div>
+        <div class="card">
+          <h3>🏃 スポーツ活動</h3>
+          <p style="color: var(--color-gray);">健康的な体を育てる活動</p>
+        </div>
+        <div class="card">
+          <h3>📚 学習セッション</h3>
+          <p style="color: var(--color-gray);">楽しみながら学べる環境</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" style="padding: 4rem 2rem; background: white;">
+    <div class="container">
+      <h2 class="section-title">🛠️ サービス</h2>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">📱 オンラインプラットフォーム</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">いつでもどこでも学べるオンラインサービス</p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">👨‍🏫 専門家による指導</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">経験豊富な講師による個別指導</p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">🎯 カスタマイズされたカリキュラム</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">各子どもに合わせた学習プラン</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" style="padding: 4rem 2rem; background: var(--color-light);">
+    <div class="container">
+      <h2 class="section-title">ℹ️ について</h2>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">私たちの使命</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">
+          <span class="highlight">Voila les Enfants</span> は、すべての子どもたちに質の高い教育と楽しい学習体験を提供することを目指しています。
+          モダンなテクノロジーと人間的なアプローチを組み合わせて、子どもたちの可能性を最大限に引き出します。
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--color-primary);">技術スタック</h3>
+        <p style="margin-top: 1rem; color: var(--color-gray);">
+          ✅ モダンなHTML/CSS/JavaScript<br>
+          ✅ GitHub Actions による自動デプロイ<br>
+          ✅ Vercel でのホスティング<br>
+          ✅ 高速で安全なインフラ
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" style="padding: 4rem 2rem; background: white;">
+    <div class="container" style="max-width: 600px;">
+      <h2 class="section-title">📞 お問い合わせ</h2>
+      <form class="contact-form" style="background: var(--color-light); padding: 2rem; border-radius: 12px;">
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--color-dark);">お名前</label>
+          <input type="text" placeholder="例：田中太郎" style="width: 100%; padding: 0.8rem; border: 2px solid var(--color-secondary); border-radius: 6px; font-size: 1rem;">
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--color-dark);">メールアドレス</label>
+          <input type="email" placeholder="example@email.com" style="width: 100%; padding: 0.8rem; border: 2px solid var(--color-secondary); border-radius: 6px; font-size: 1rem;">
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--color-dark);">メッセージ</label>
+          <textarea placeholder="お問い合わせ内容をお書きください..." style="width: 100%; padding: 0.8rem; border: 2px solid var(--color-secondary); border-radius: 6px; font-size: 1rem; min-height: 150px; font-family: inherit;"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem; cursor: pointer; font-weight: 600;">送信</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: var(--color-dark); color: white; padding: 3rem 2rem; text-align: center;">
+    <div class="container">
+      <h3 style="margin-bottom: 1rem;">✨ Voila les Enfants</h3>
+      <p style="margin-bottom: 1rem;">
+        子どもたちの未来を創造する学習プラットフォーム
+      </p>
+      <p style="font-size: 0.9rem; color: var(--color-gray);">
+        📧 contact@voila-les-enfants.jp<br>
+        📞 +81-XX-XXXX-XXXX<br>
+        © 2025 Voila les Enfants. すべての権利を保有します。
+      </p>
+    </div>
+  </footer>
+
+  <!-- FOOT NAV -->
+  <nav class="foot-nav" style="background: #1a1a1a; color: white; padding: 1.5rem; text-align: center; border-top: 2px solid var(--color-primary);">
+    <p style="margin: 0;">
+      🚀 Architecture modulaire × 🔄 GitHub Actions × ⚡ Vercel<br>
+      <small style="color: var(--color-gray);">Refactorisation réussie - Performance optimisée</small>
+    </p>
+  </nav>
+
   <script src="js/main.js" defer></script>
+  <script src="js/modules/navbar.js" defer></script>
+  <script src="js/modules/gallery.js" defer></script>
+  <script src="js/modules/reveal.js" defer></script>
+  <script src="js/modules/services.js" defer></script>
+  <script src="js/modules/contact.js" defer></script>
+  <script src="js/modules/lang.js" defer></script>
 </body>
 </html>
